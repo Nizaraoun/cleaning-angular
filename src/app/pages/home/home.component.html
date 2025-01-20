@@ -1,0 +1,33 @@
+<div class="swiper-wrapper">
+  <div class="swiper-slide tj-slider-item">
+    <div class="slider-bg-image">
+      <img [src]="currentSlide" alt="carousel image" />
+    </div>
+    <div class="container">
+      <div class="slider-content">
+        <!-- Apply the scroll animation directive to elements -->
+        <h1 class="slider-title" appScrollAnimation>Du ménage au bricolage </h1>
+        <h2 class="slider-sub-title" appScrollAnimation> nous simplifions <span> votre quotidien</span></h2>
+
+        <!-- Green Line -->
+        <div class="green-line"></div>
+
+        <div class="slider-text">
+          <div class="desc" appScrollAnimation>
+            <p>
+              
+Bienvenue chez <strong> M’BARKI Groupe :</strong> Votre expert en ménage, bricolage et petits travaux..
+            </p>
+          </div>
+          <div class="slider-button d-flex">
+            <a class="tj-transparent-btn btn" appScrollAnimation>
+              Réserver mon ménage <i class="flaticon-right-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-about></app-about>

@@ -1,0 +1,38 @@
+.bg-green {
+    background-color: #7ED321; /* Green background color */
+    position: relative; /* To position the vacuum image */
+    overflow: hidden; /* To contain the inner elements */
+  }
+  
+  .vacuum-image {
+    width: 60%; /* Ensure the image takes full width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+  }
+  
+  .text-green {
+    color: #F94D1C; /* Change text color to match green */
+  }
+  
+  .announcecontainer {
+    border-radius: 20px; 
+    background: linear-gradient(to bottom, #F94D1C, #F1EDF1);
+    margin-top: 5% ;
+  }
+  @media (min-width:320px) and (max-width:767px)
+   {
+    .vacuum-image {
+      width: 75%; /* Adjust image size for smaller screens */
+    }
+    .responsive-title {
+      font-size: 1.2rem; /* Adjust title size for smaller screens */
+    }
+    .responsive-heading {
+      font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+    .responsive-button {
+      font-size: 1rem; /* Adjust button size for smaller screens */
+    }
+  }
+  /* Base styles (for larger screens) */
+  
+  

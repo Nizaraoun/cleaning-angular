@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-8 col-md-10">
+            <div class="title-area text-center" appScrollAnimation>
+                <!-- <span class="sub-title">
+                    <img src="assets/img/theme-img/title_icon.svg" alt="Icon">Nos services
+                </span> -->
+                <!-- <h2 class="sec-title">Les services que nous offrons</h2> -->
+                <h2>
+                    <span appScrollAnimation style="color: rgb(1, 8, 54); ">Les services</span>
+                    <span appScrollAnimation style="color: #F94D1C; "> que nous offrons</span>
+                </h2>
+                <img src="assets/balayer.png" alt="network" class="moving-image">
+                <p class="sec-text">
+           
+                    Nous proposons des services complets et personnalisés pour répondre à
+                    vos besoins de nettoyage et d'entretien, que vous soyez un particulier, une entreprise, une collectivité
+                    ou une industrie. Notre équipe qualifiée assure un service irréprochable, avec la garantie
+                    <strong>"satisfait ou remboursé" </strong> pour une tranquillité d'esprit totale.
+    
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="service-grid">
+        <div class="service-card" *ngFor="let service of services; let i = index" appScrollAnimation>
+            <div class="box-number">{{ i + 1 }}</div>
+            <div class="box-icon">
+                <img [src]="service.icon" alt="Icon">
+            </div>
+            <p class="box-subtitle">Service And Repairs</p>
+            <h3 class="box-title"><a [href]="service.link">{{ service.title }}</a></h3>
+            <p class="box-text">{{ service.description }}</p>
+            <a [href]="service.link" class="th-btn btn-sm">
+                En savoir plus<i class="fa fa-chevron-circle-right  ms-2"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<app-contact></app-contact>

@@ -1,0 +1,225 @@
+/* General Styles (Base Styles) */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+a, a:hover {
+  text-decoration: none !important;
+}
+
+.text-black {
+  color: #000;
+}
+
+.content {
+  padding: 12rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  padding: 10px;
+  border: none;
+  background: #f3f3f3;
+  box-shadow: 0 2px 4px rgba(2, 14, 95, 0.1);
+}
+
+.form-control:active, .form-control:focus {
+  outline: none;
+  border-color: #000;
+  background: #f3f3f3;
+  box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.col-form-label {
+  color: #000;
+}
+
+.btn, .form-control, .custom-select {
+  height: 50px;
+}
+
+.custom-select:active, .custom-select:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #000;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px !important;
+}
+
+.btn.btn-primary {
+  background: #6C63FF;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:active, .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.box {
+  padding: 40px;
+  background: #fff;
+  box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+}
+
+.box h3 {
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+label.error {
+  font-size: 12px;
+  color: red;
+}
+
+#message {
+  resize: vertical;
+}
+
+#form-message-warning, #form-message-success {
+  display: none;
+}
+
+#form-message-warning {
+  color: #B90B0B;
+}
+
+#form-message-success {
+  color: #55A44E;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.submitting {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .content {
+    padding: 8rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .box {
+    padding: 30px;
+  }
+
+  .btn, .form-control, .custom-select {
+    height: 45px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    padding: 6rem; /* Reduce padding for better tablet display */
+  }
+
+  .heading {
+    font-size: 2rem; /* Slightly larger heading for tablets */
+  }
+
+  .box {
+    padding: 25px;
+  }
+
+  .btn, .form-control, .custom-select {
+    height: 45px; /* Maintain reasonable button size */
+  }
+
+  .form-control {
+    padding: 12px; /* Increase padding for more comfortable form inputs */
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 5rem;
+  }
+
+  .container {
+    padding-top: 20%;
+  }
+
+  .heading {
+    font-size: 1.6rem;
+  }
+
+  .box {
+    padding: 20px;
+  }
+
+  .btn, .form-control, .custom-select {
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    padding: 3rem;
+  }
+
+  .heading {
+    font-size: 1.4rem;
+  }
+
+  .box {
+    padding: 15px;
+  }
+
+  .btn, .form-control, .custom-select {
+    height: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .content {
+    padding: 1.5rem;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .box {
+    padding: 10px;
+  }
+
+  .btn, .form-control, .custom-select {
+    height: 40px;
+  }
+}

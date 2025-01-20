@@ -1,0 +1,39 @@
+<nav class="navbar" id="navbar">
+  <div class="menu-area">
+    <div class="logo-area">
+      <img *ngIf="!isMobileOrTablet" src="assets/logo.png" alt="Logo">
+      <img *ngIf="isMobileOrTablet" src="assets/mbarki.png" alt="Logo">
+
+    </div>
+    <div class="tj-menu-area d-lg-block d-none">
+      <nav>
+        <ul>
+          <li class="has-dropdown"><a  (click)="navigateTohome()" >Home</a></li>
+          <li><a  (click)="navigateToAbout()">About Us</a></li>
+          <li class="has-droxpdown"><a  (click)="navigateToservice()"> Services</a></li>
+          <li class="has-dropdown"><a>Blog</a></li>
+          <li><a (click)="navigateToContact() ">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="hamburger-menu d-lg-none d-block" (click)="toggleMobileMenu()">
+
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu d-lg-none" [ngClass]="{'active': isMobileMenuOpen}">
+      <nav>
+        <ul>
+          <li class="has-dropdown current-menu-item"><a href="index-2.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li class="has-dropdown"><a href="services.html">Services</a></li>
+          <li class="has-dropdown"><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</nav>

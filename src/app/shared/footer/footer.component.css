@@ -1,0 +1,49 @@
+
+footer .container-fluid {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer .row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer .col-lg-3 img {
+    width: 100px;
+    height: 100px;
+}
+
+footer p, footer ul, footer h5 {
+    margin-bottom: 5px;
+}
+h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 20px; 
+}
+.animated-link {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Animation on hover */
+.animated-link:hover {
+    color: #F94D1C; /* Change to your desired hover color */
+    transform: translateX(10px); /* Move the link to the right */
+}
+.rotating-logo {
+    transition: transform 0.5s ease;
+    padding-bottom:0!important; ;
+}
+
+.rotating-logo:hover {
+    transform: rotate(360deg);
+}
+input .form-control :hover{
+    background-color: #F94D1C;
+    border-color: #F94D1C;
+}

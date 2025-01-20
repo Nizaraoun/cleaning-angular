@@ -1,0 +1,43 @@
+<section class="feature-layout1">
+  <div class="container-xxl">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+        <div class="heading text-center">
+          <h2 class="heading__subtitle">{{ headingSubtitle }}</h2>
+          <h3 class="heading__title mb-40">{{ headingTitle }}</h3>
+        </div><!-- /heading -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-3" *ngFor="let feature of features">
+        <div class="feature-item">
+          <div class="feature__body">
+            <div class="feature__icon">
+              <i class="{{ feature.icon }}"></i>
+            </div><!-- /.feature__icon -->
+            <h4 class="feature__title">{{ feature.title }}</h4>
+            <p class="feature__desc">{{ feature.description }}</p>
+            <a [href]="feature.link" class="btn btn__secondary btn__link">
+              <i class="icon-arrow-right icon-outlined"></i>
+              <span>{{ feature.linkText }}</span>
+            </a>
+          </div><!-- /.feature__body -->
+          <div class="feature__img">
+            <img [src]="feature.imageUrl" alt="feature">
+          </div><!-- /.feature__img -->
+        </div><!-- /.feature-item -->
+      </div><!-- /.col-lg-3 -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+        <p class="text__link text-center mb-0">
+          {{ contactText }}
+          <a href="contactform" class="btn btn__secondary btn__link mx-1">
+            <span>Contactez-nous pour plus d'informations</span> 
+            <i class="icon-arrow-right color-primary"></i>
+          </a>
+        </p>
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.feature-layout1 -->

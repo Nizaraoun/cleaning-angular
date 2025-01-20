@@ -1,0 +1,52 @@
+<section class="pricing-layout3 pt-100 pb-100 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="tab-content">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 offset-lg-6">
+              <nav class="nav nav-tabs justify-content-center">
+                <a *ngFor="let package of packages" class="nav__link" [class.active]="package.id === 'package2'"
+                  data-toggle="tab" href="#{{ package.id }}">
+                  <div class="nav__icon">
+                    <i class="icon-brush"></i>
+                  </div>
+                  <span>{{ package.title }}</span>
+                </a>
+              </nav>
+            </div>
+          </div>
+
+          <div *ngFor="let package of packages" class="tab-pane fade"
+            [ngClass]="{'active show': package.id === 'package2'}" id="{{ package.id }}">
+            <div class="pricing-package p-0">
+              <div class="row row-gutter-0">
+                <div class="col-sm-12 col-md-12 col-lg-6 package__banner">
+                  <div class="bg-img">
+                    <img [src]="package.imageUrl" alt="bg">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                  <div class="package__body">
+                    <div class="text-center">
+                      <h5 class="package__title">{{ package.title }}</h5>
+                      <p class="package__desc">{{ package.description }}</p>
+                      <a href="pricing.html" class="btn btn__primary justify-content-between">
+                        <span>Purchase Now</span>
+                        <i class="icon-arrow-right"></i>
+                      </a>
+                    </div>
+                    <ul class="package__list list-items list-items-layout2 list-horizontal list-unstyled">
+                      <li *ngFor="let facility of package.facilities">{{ facility }}</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

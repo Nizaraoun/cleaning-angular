@@ -1,0 +1,285 @@
+/* Container and Title */
+.container.z-index-common {
+    position: relative;
+    z-index: 2;
+    padding: 60px 15px;
+}
+
+.title-area {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+}
+
+.title-area .line {
+    height: 30px;
+    width: 20%;
+    background-color: #D57005; /* Customize color based on your preference */
+    -webkit-mask-image: url('data:image/svg+xml,<svg width="430" height="9" viewBox="0 0 430 9" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M429.017 0.5H40.5546C37.8036 0.5 36.4282 0.5 35.1536 0.942471C33.8791 1.38494 32.7995 2.23725 30.6403 3.94188L29.8597 4.55813C27.7006 6.26275 26.6209 7.11506 25.3464 7.55753C24.0719 8 22.6964 8 19.9454 8H1" stroke="%23D9D9D9" stroke-linecap="round"/></svg>');
+    mask-image: url('data:image/svg+xml,<svg width="430" height="9" viewBox="0 0 430 9" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M429.017 0.5H40.5546C37.8036 0.5 36.4282 0.5 35.1536 0.942471C33.8791 1.38494 32.7995 2.23725 30.6403 3.94188L29.8597 4.55813C27.7006 6.26275 26.6209 7.11506 25.3464 7.55753C24.0719 8 22.6964 8 19.9454 8H1" stroke="%23D9D9D9" stroke-linecap="round"/></svg>');
+    -webkit-mask-size: auto;
+    mask-size: auto;
+    -webkit-mask-position: left bottom;
+    mask-position: left bottom;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    top: -10px;
+    left: 0;
+}
+
+.title-area .sub-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #D57005; /* Customize color based on your preference */
+}
+
+.sub-title img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.title-area .sec-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #333; /* Customize color based on your preference */
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.sec-btn .th-btn.style4 {
+    display: inline-flex;
+    align-items: center;
+    background-color: #D57005; /* Customize color based on your preference */
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.sec-btn .th-btn.style4:hover {
+    background-color: #160865; /* Hover color change */
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Swiper Slider */
+.slider-area .swiper {
+    padding: 30px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-card {
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    margin: 15px;
+}
+
+.team-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.box-img {
+    position: relative; /* Ensure .box-img is positioned */
+}
+
+.box-img img {
+    width: auto;
+    height: auto;
+    z-index: 1; /* Set a lower z-index for the image */
+    position: relative; /* Ensure the image is positioned */
+}
+
+.box-content {
+    background-color: #151543f0;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 20px;
+    position: absolute; /* Position the .box-content absolutely */
+    bottom: 0; /* Align it at the bottom of the image */
+    left: 0;
+    right: 0;
+    z-index: 2; /* Set a higher z-index for the .box-content */
+    color: #fff; /* Ensure the text color is readable on the background */
+}
+
+.box-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff; /* Customize color based on your preference */
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.box-title a:hover {
+    color: #fd8318; /* Hover color */
+}
+
+.box-desig {
+    font-size: 16px;
+    color: #f4efef; /* Customize color based on your preference */
+    margin-bottom: 15px;
+}
+
+/* Social Media Icons */
+.box-social {
+    margin-top: 0px;
+    z-index: 3;
+    position: relative; /* Position the .box-content absolutely */
+    margin-bottom: 15px;
+}
+
+.box-btn {
+    display: inline-block;
+    background-color: #D57005; /* Customize color based on your preference */
+    color: #fff;
+    font-size: 25px;
+    width: 50px; /* Ensure the width and height are equal */
+    height: 50px;
+    padding: 0; /* Remove padding to maintain the circular shape */
+    border-radius: 50%; /* Make it a perfect circle */
+    text-align: center; /* Center the icon inside the button */
+    line-height: 50px; /* Vertically center the text/icon */
+}
+
+.th-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.th-social a {
+    font-size: 16px;
+    color: #777;
+    transition: color 0.3s ease;
+}
+
+.th-social a:hover {
+    color: #D57005; /* Hover color */
+}
+
+/* Pagination */
+.slider-pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.slider-area .swiper .swiper-pagination {
+    background-color: #d570051b; /* Customize color based on your preference */
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* Responsive Mode */
+
+/* Small Devices (Tablets, 768px and below) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    .title-area .sec-title {
+        font-size: 32px; /* Reduce font size */
+    }
+
+    .sec-btn .th-btn.style4 {
+        padding: 13px; /* Slightly reduce padding for buttons */
+        font-size: 22px; /* Reduce font size */
+    }
+
+    .sub-title span {
+        font-size: 26px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
+
+    .box-title {
+        font-size: 18px; /* Reduce font size for smaller screens */
+    }
+
+    .box-desig {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .box-btn {
+        font-size: 20px; /* Adjust icon size */
+        width: 40px; /* Reduce button size */
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .th-social a {
+        font-size: 14px; /* Adjust font size for social icons */
+    }
+}
+
+/* Extra Small Devices (Mobile Phones, 576px and below) */
+@media (max-width: 576px) {
+    .title-area .sec-title {
+        font-size: 29px; /* Further reduce font size */
+        margin-top: 10px; /* Further reduce margin */
+    }
+
+    .sec-btn .th-btn.style4 {
+        margin-top: 15px; /* Add top margin to align better */
+        padding: 10px; /* Further reduce padding */
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    .box-title {
+        font-size: 16px; /* Further reduce font size */
+    }
+
+    .box-desig {
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    .box-btn {
+        font-size: 18px; /* Adjust icon size */
+        width: 35px; /* Further reduce button size */
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .th-social a {
+        font-size: 12px; /* Adjust font size for social icons */
+    }
+
+    .title-area .line {
+        width: 40%;
+    }
+
+    .slider-area .swiper .swiper-pagination {
+        display: none; /* Hide pagination on smaller screens */
+    }
+}

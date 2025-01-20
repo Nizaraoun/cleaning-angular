@@ -1,0 +1,176 @@
+<div class="container-fluid">
+  <div class="container header">
+    <div class="row">
+      <div class="col-12 col-md-8 align-self-end">
+        <div class="row row-cols-1">
+          <div class="col" *ngFor="let service of services">
+            <h1>{{ service.title }}</h1>
+            <h2>{{ service.subtitle }}</h2>
+            <h3>{{ service.subtitle }}</h3>
+            <p>{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 align-self-start d-none d-md-block">
+        <img [src]="services[0].image" alt="Nettoyage" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-how-work-widget></app-how-work-widget>
+
+<section class="services-layout1 pt-130 pb-90">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+        <div class="heading text-center mb-60">
+          <h2 class="heading__subtitle">Cleaning Plans FOr Your Needs</h2>
+          <h3 class="heading__title">Specialist Disinfection Services That Fits Your Premises</h3>
+        </div><!-- /.heading -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    <div class="row">
+      <!-- service item #1 -->
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="service-item">
+          <div class="service__overlay">
+            <div class="bg-img">
+              <img src="assets/images/services/1.jpg" alt="service">
+            </div>
+          </div><!-- /.service__overlay -->
+          <div class="service__body">
+            <div class="service__icon">
+              <i class="icon-house"></i>
+            </div><!-- /.service__icon -->
+            <h4 class="service__title">Occasional & One Time Cleaning Service</h4>
+            <p class="service__desc">We have a custom cleaning service designed to help you clean when you need it,
+              whether we clean one time or on regular, your house will always sparkle clean
+            </p>
+            <a href=" " class="btn btn__secondary btn__block d-flex justify-content-between">
+              <span>Read More</span>
+              <i class="icon-arrow-right icon-outlined"></i>
+            </a>
+          </div><!-- /.service__body -->
+        </div><!-- /.service-item -->
+      </div><!-- /.col-lg-4 -->
+      <!-- service item #2 -->
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="service-item">
+          <div class="service__overlay">
+            <div class="bg-img">
+              <img src="assets/images/services/2.jpg" alt="service">
+            </div>
+          </div><!-- /.service__overlay -->
+          <div class="service__body">
+            <div class="service__icon">
+              <i class="icon-maid"></i>
+            </div><!-- /.service__icon -->
+            <h4 class="service__title">Recurring & Ongoing Cleaning Service</h4>
+            <p class="service__desc">With recurring service you will never have to worry about the unexpected and
+              your home will be clean and ready, recurring service will get your home tidy so you enjoy your...
+            </p>
+            <a href=" " class="btn btn__secondary btn__block d-flex justify-content-between">
+              <span>Read More</span>
+              <i class="icon-arrow-right icon-outlined"></i>
+            </a>
+          </div><!-- /.service__body -->
+        </div><!-- /.service-item -->
+      </div><!-- /.col-lg-4 -->
+      <!-- service item #3 -->
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="service-item">
+          <div class="service__overlay">
+            <div class="bg-img">
+              <img src="assets/images/services/3.jpg" alt="service">
+            </div>
+          </div><!-- /.service__overlay -->
+          <div class="service__body">
+            <div class="service__icon">
+              <i class="icon-wipe"></i>
+            </div><!-- /.service__icon -->
+            <h4 class="service__title">Move Out & Move In Cleaning Service</h4>
+            <p class="service__desc">We offer flexible move in and move out cleaning services to ease the transition
+              into your new space, whether you need the entire house cleaned or just certain items on it.
+            </p>
+            <a href=" " class="btn btn__secondary btn__block d-flex justify-content-between">
+              <span>Read More</span>
+              <i class="icon-arrow-right icon-outlined"></i>
+            </a>
+          </div><!-- /.service__body -->
+        </div><!-- /.service-item -->
+      </div><!-- /.col-lg-4 -->
+      <!-- service item #4 -->
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="service-item">
+          <div class="service__overlay">
+            <div class="bg-img">
+              <img src="assets/images/services/4.jpg" alt="service">
+            </div>
+          </div><!-- /.service__overlay -->
+          <div class="service__body">
+            <div class="service__icon">
+              <i class="icon-dusting"></i>
+            </div><!-- /.service__icon -->
+            <h4 class="service__title">Professional Apartment Cleaning Service</h4>
+            <p class="service__desc">While residential service may seem like a luxury, when you think about the
+              advantages, you may realize cleaning services are a great investment return on your investment.
+            </p>
+            <a href=" " class="btn btn__secondary btn__block d-flex justify-content-between">
+              <span>Read More</span>
+              <i class="icon-arrow-right icon-outlined"></i>
+            </a>
+          </div><!-- /.service__body -->
+        </div><!-- /.service-item -->
+      </div><!-- /.col-lg-4 -->
+      <!-- service item #5 -->
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="service-item">
+          <div class="service__overlay">
+            <div class="bg-img">
+              <img src="assets/images/services/5.jpg" alt="service">
+            </div>
+          </div><!-- /.service__overlay -->
+          <div class="service__body">
+            <div class="service__icon">
+              <i class="icon-glass-cleaning"></i>
+            </div><!-- /.service__icon -->
+            <h4 class="service__title">Residential Window Cleaning Services</h4>
+            <p class="service__desc">If you've ever tackled cleaning your home's windows, you know how time
+              consuming it can be and how physically demanding it is from digging out ladders and equipment.
+            </p>
+            <a href=" " class="btn btn__secondary btn__block d-flex justify-content-between">
+              <span>Read More</span>
+              <i class="icon-arrow-right icon-outlined"></i>
+            </a>
+          </div><!-- /.service__body -->
+        </div><!-- /.service-item -->
+      </div><!-- /.col-lg-4 -->
+      <!-- service item #6 -->
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="service-item">
+          <div class="service__overlay">
+            <div class="bg-img">
+              <img src="assets/images/services/6.jpg" alt="service">
+            </div>
+          </div><!-- /.service__overlay -->
+          <div class="service__body">
+            <div class="service__icon">
+              <i class="icon-vacuum-cleaner"></i>
+            </div><!-- /.service__icon -->
+            <h4 class="service__title">Professional Carpet Cleaning Services</h4>
+            <p class="service__desc">Dirt and other particles that are left too long work their way into fibers
+              break down your carpet's fibers. Once they embedded, they can be almost impossible to remove.
+            </p>
+            <a href=" " class="btn btn__secondary btn__block d-flex justify-content-between">
+              <span>Read More</span>
+              <i class="icon-arrow-right icon-outlined"></i>
+            </a>
+          </div><!-- /.service__body -->
+        </div><!-- /.service-item -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.Services Layout 1 -->
+
